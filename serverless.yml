@@ -1,0 +1,18 @@
+service: tf-lambda-datesync
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  daySync:
+    handler: handler.daySync
+    environment:
+      INTERVAL: 7 # How many days you want to list
+      TIMEZONE: 'America/Los_Angeles' # Change it to yours
+      FORM_ID: 'YOUR_FORM_ID' # Which form you want to update
+      FIELD_ID: 'YOUR_FIELD_ID' # Which field
+      TF_TOKEN: 'YOUR_TYPEFORM_TOKEN' #Typeform API token
+      EXCLUDE_WEEKENDS: true
+    events:
+      - schedule: cron(01 0 * * ? *) #every day at 00:01am
