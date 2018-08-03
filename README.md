@@ -49,7 +49,7 @@ You could see in the logs the values that will be pushed to your dropdown field.
 
 ![run function locally](./doc-images/dateSync_lambda_local.png)
 
-1. Deploy function to production `sls deploy`
+7. Deploy function to production `sls deploy`
 
 The function is setup to be called every day at `00:01am`, you can change it in `serverless.yml` under `schedule` property.
 
@@ -63,4 +63,4 @@ First timers welcome 😃
 # Build your own
 This is a showcase of what's doable to enrich your typeform fields with data. Using this function as an example you build more complex interactions.
 
-[Let us know](typeform link) if you end up building something.
+[Let us know](https://developerplatform.typeform.com/to/Xc7NMh?utm_source=github&utm_medium=repo&utm_campaign=typeform-field-update-lambda) if you are building something.
