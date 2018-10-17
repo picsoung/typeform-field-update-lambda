@@ -14,7 +14,7 @@ Here is how it looks like:
 
 # How to use it?
 Pre-requesites:
-- a Typeform account, create one [here](https://)
+- a Typeform account, create one [here](https://admin.typeform.com/signup)
 - an AWS account, create one [here](https://aws.amazon.com)
 - `aws-cli` installed and configured, [instructions](https://aws.amazon.com/cli/)
 - [Serverless](https://serverless.com/framework/) framework installed locally - `npm install -g serverless`
