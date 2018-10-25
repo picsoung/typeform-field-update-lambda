@@ -55,7 +55,7 @@ The function is setup to be called every day at `00:01am`, you can change it in 
 
 # Contribute
 Something is mispelled, the code could be optimized, you want to add features...?
-Feel free to fork this repo and summit a pull request.
+Feel free to fork this repo and submit a pull request.
 
 First timers welcome 😃
 
