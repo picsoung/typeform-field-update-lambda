@@ -14,9 +14,9 @@ Here is how it looks:
 
 # How to use it?
 Prerequisites:
-- a Typeform account, create one [here](https://admin.typeform.com/signup)
-- an AWS account, create one [here](https://aws.amazon.com)
-- `aws-cli` installed and configured, [instructions](https://aws.amazon.com/cli/)
+- a Typeform account (create one [here](https://admin.typeform.com/signup))
+- an AWS account (create one [here](https://aws.amazon.com))
+- `aws-cli` installed and configured ([instructions](https://aws.amazon.com/cli/))
 - [Serverless](https://serverless.com/framework/) framework installed locally - `npm install -g serverless`
 
 ## Get Typeform ready
@@ -34,7 +34,7 @@ Prerequisites:
 
 ## Setup the function
 
-1. Clone repo locally `git clone`
+1. Clone repo locally: `git clone`
 1. `cd `
 1. run `npm install`
 1. Open `serverless.yml`
@@ -42,7 +42,7 @@ Prerequisites:
       `INTERVAL: 7` # How many days you want to list
       `TIMEZONE: 'America/Los_Angeles'` # Change it to the one of your choice, supports [IANA](https://moment.github.io/luxon/docs/manual/zones.html#iana-support)
       `FORM_ID: 'YOUR_FORM_ID'` # Which typeform you want to update
-      `FIELD_ID: 'YOUR_FIELD_ID'` # Id of the field you want to update
+      `FIELD_ID: 'YOUR_FIELD_ID'` # ID of the field you want to update
       `TF_TOKEN: 'YOUR_TYPEFORM_TOKEN`' # Typeform API personal token
 1. Test the function locally in your terminal with the following command `sls invoke local -f daySync`
 You could see in the logs the values that will be pushed to your dropdown field. If they look ok, it's ready for production.
@@ -51,16 +51,16 @@ You could see in the logs the values that will be pushed to your dropdown field.
 
 7. Deploy function to production `sls deploy`
 
-The function is setup to be called every day at `00:01am`, you can change it in `serverless.yml` under `schedule` property.
+The function is setup to be called every day at `00:01am`. You can change it in `serverless.yml` under `schedule` property.
 
 # Contribute
-Something is mispelled, the code could be optimized, you want to add features...?
+Something is misspelled, the code could be optimized, you want to add features...?
 Feel free to fork this repo and submit a pull request.
 
 First timers welcome 😃
 
 
 # Build your own
-This is a showcase of what's doable to enrich your typeform fields with data. Using this function as an example you build more complex interactions.
+This is a showcase of what's doable to enrich your typeform fields with data. Using this function as an example, you can build more complex interactions.
 
 [Let us know](https://developerplatform.typeform.com/to/Xc7NMh?utm_source=github&utm_medium=repo&utm_campaign=typeform-field-update-lambda) if you are building something.
