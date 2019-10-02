@@ -25,7 +25,7 @@ exports.listForms = function(access_token, page_number, page_size){
 exports.getFormDef = function(form_id){
   var options = {
     url: "https://api.typeform.com/forms/"+form_id,
-    method: "GET",
+    method: "GET"
   }
 
   return axios(options)
