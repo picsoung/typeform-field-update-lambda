@@ -25,7 +25,7 @@ Prerequisites:
 2. Add a dropdown field if you don't have one already.
 3. Get your typeform URL, and keep your form ID.
   `https://{ACCOUNT_NAME}.typeform.com/to/{FORM_ID}`
-4. Hit `https://api.typeform.com/to/{FORM_ID}` directly in the browser.
+4. Hit `https://api.typeform.com/forms/{FORM_ID}` directly in the browser.
 
 ![payload from Typeform API for form definition](./doc-images/api_typeform_payload.png)
 
