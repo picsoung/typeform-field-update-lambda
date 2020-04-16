@@ -35,8 +35,8 @@ Prerequisites:
 ## Setup the function
 
 1. Clone repo locally: `git clone`
-1. `cd `
-1. run `npm install`
+1. `cd {PATH_TO_PACKAGE} `
+1. run `npm install {PACKAGE}`
 1. Open `serverless.yml`
 1. Update environment variables with your own:
       `INTERVAL: 7` # How many days you want to list
